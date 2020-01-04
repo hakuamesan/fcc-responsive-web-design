@@ -5,7 +5,7 @@
 
 main {
   position: relative;
-  margin-top: 80px;
+  margin-top: 100px;
 }
 
 .logo {
@@ -17,17 +17,18 @@ main {
 header {
   position: fixed;
   top: 0;
-  min-height: 75px;
+  min-height: 85px;
   padding: 0px 20px;
   display: flex;
   width: 100%;
-  background-color: lightgreen;
-  display: flex;
-  align-items: center;
+  background-color: lightgray;
+  align-items: right;
+  text-align: right;
 }
 
 header *{
-  display: inline;
+  display: flex;
+  text-align: right;
 }
 
 header li {
@@ -38,9 +39,57 @@ header li a{
   color: black;
   text-decoration: none;
 }
+
+figure {
+  display: flex;
+  flex-direction: column;
+}
+
+@media (max-width: 600px) {
+  header {
+    flex-wrap: wrap;
+  }
+}
+
+
 nav {
 
   height: 10vh;
+}
+
+section {
+  padding: 20px;
+}
+#intro {
+  height: 50vh;
+  background-color: lightblue;
+}
+
+
+#videos{
+  height: 100vh;
+  background-color: green;
+}
+
+#signup{
+  height: 20vh;
+  background-color: cyan;
+}
+
+#products{
+  height: 70vh;
+  background-color: turquoise;
+}
+
+h2 {
+  text-align: left;
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+
+p {
+  line-height: 1.5;
+  margin: 10px;
 }
 
 footer {
