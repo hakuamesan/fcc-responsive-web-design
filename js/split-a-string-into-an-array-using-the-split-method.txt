@@ -1,0 +1,11 @@
+function splitify(str) {
+  // Add your code below this line
+let s = str.replace(/[.,\/#!$%\^&\*;:{}=\-_`~()]/g," ");
+s=s.split(/\s/);
+
+return s;
+
+
+  // Add your code above this line
+}
+console.log(splitify("Hello World,I-am code"));
